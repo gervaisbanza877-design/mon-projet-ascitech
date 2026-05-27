@@ -1,0 +1,36 @@
+# Environnement
+.env
+.env.local
+.env.*.local
+
+# Dépendances
+vendor/
+node_modules/
+composer.lock
+package-lock.json
+
+# Cache PHP
+*.cache
+.cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Base de données
+*.sql
+*.db
+*.sqlite
+
+# Fichiers temporaires
+tmp/
+temp/
+*.log
+
+# Fichiers système
+Thumbs.db
+.DS_Store
