@@ -1,0 +1,263 @@
+:root {
+    --gold: #b89754;
+    --noir: #0a0b0c;
+    --blanc: #ffffff;
+    --gris: #f8f9fa;
+    --accent: #198754;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: var(--gris);
+    color: var(--noir);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+.main-header {
+    background: var(--blanc);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.logo-circle {
+    width: 30px;
+    height: 30px;
+ 
+    border: 1px solid var(--gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.logo-circle img {
+    width: 80%;
+    object-fit: contain;
+}
+
+.brand-name {
+    font-weight: 800;
+    font-size: 1rem;
+    color: var(--noir);
+    letter-spacing: -0.5px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--gold);
+}
+
+.btn-cta {
+    background: var(--accent);
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(25, 135, 84, 0.3);
+}
+
+
+
+
+.hero-mini {
+    background: var(--noir);
+    color: #fff;
+    padding: 60px 0 100px;
+    text-align: center;
+}
+
+.hero-mini h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+.hero-mini span {
+    color: var(--gold);
+}
+
+.hero-mini p {
+    opacity: 0.6;
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+
+
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 30px;
+    margin-top: -60px;
+}
+
+.glass-card {
+    background: var(--blanc);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+.input-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.field {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 6px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #eee;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--gold);
+    background: #fffdf9;
+}
+
+.btn-boost {
+    width: 100%;
+    background: var(--noir);
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-boost:hover {
+    background: var(--gold);
+    transform: scale(1.02);
+}
+
+
+
+
+.info-card {
+    background: var(--blanc);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--gold);
+    box-shadow: var(--shadow);
+}
+
+.info-card h3 {
+    font-size: 1rem;
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+
+
+
+.footer {
+    background: #0c0c0c;
+    padding: 30px 0;
+    margin-top: 60px;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+
+.footer p {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    .nav-links {
+        display: none;
+    }
+    .input-row {
+        grid-template-columns: 1fr;
+    }
+}

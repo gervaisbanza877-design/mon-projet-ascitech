@@ -1,0 +1,393 @@
+.student-space {
+    background: #f6f4ef;
+    min-height: 70vh;
+    padding: 48px 5% 80px;
+}
+
+.student-container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.student-hero {
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+    gap: 24px;
+    align-items: stretch;
+    margin-bottom: 28px;
+}
+
+.student-panel,
+.student-card,
+.student-profile,
+.dashboard-card {
+    background: #fff;
+    border: 1px solid rgba(18, 20, 23, 0.08);
+    border-radius: 8px;
+    box-shadow: 0 18px 45px rgba(18, 20, 23, 0.08);
+}
+
+.student-panel {
+    padding: 34px;
+    position: relative;
+    overflow: hidden;
+}
+
+.student-panel::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 6px;
+    background: linear-gradient(90deg, #0f5132, #c5a059);
+}
+
+.eyebrow {
+    color: #b89754;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.student-panel h1 {
+    color: #1a1c20;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    line-height: 1.08;
+    margin: 0 0 14px;
+}
+
+.student-panel p {
+    color: #61656d;
+    font-size: 1rem;
+    max-width: 700px;
+    margin-bottom: 24px;
+}
+
+.student-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.student-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.student-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(18, 20, 23, 0.12);
+}
+
+.student-btn.primary {
+    background: #0f5132;
+    color: #fff;
+}
+
+.student-btn.secondary {
+    background: #1a1c20;
+    color: #fff;
+}
+
+.student-btn.light {
+    background: #f5efe2;
+    color: #7a5b20;
+}
+
+.student-card {
+    padding: 28px;
+}
+
+.profile-name {
+    color: #1a1c20;
+    font-size: 1.35rem;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.profile-email {
+    color: #777;
+    font-size: 0.95rem;
+    word-break: break-word;
+}
+
+.section-title {
+    color: #1a1c20;
+    font-size: 1.45rem;
+    font-weight: 800;
+    margin: 0 0 16px;
+}
+
+.badge-class {
+    display: inline-block;
+    background: #f5efe2;
+    color: #7a5b20;
+    border-radius: 999px;
+    padding: 6px 10px;
+    font-size: 0.78rem;
+    font-weight: 800;
+}
+
+.student-profile {
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+}
+
+.profile-header h3 {
+    color: #1a1c20;
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    margin: 0 0 10px;
+}
+
+.avatar-circle {
+    align-items: center;
+    background: #0f5132;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    flex: 0 0 82px;
+    font-size: 2.2rem;
+    font-weight: 800;
+    height: 82px;
+    justify-content: center;
+    width: 82px;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.info-box {
+    background: #fbfaf7;
+    border: 1px solid rgba(18, 20, 23, 0.08);
+    border-radius: 8px;
+    padding: 18px;
+}
+
+.info-box.wide {
+    grid-column: 1 / -1;
+}
+
+.info-label {
+    color: #8a8f98;
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.info-box strong {
+    color: #1a1c20;
+    display: block;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.info-box small {
+    color: #686d75;
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 6px;
+}
+
+.guardian-section {
+    border-top: 1px solid #eee;
+    margin-top: 26px;
+    padding-top: 24px;
+}
+
+.guardian-section h3 {
+    color: #1a1c20;
+    font-size: 1.1rem;
+    margin: 0 0 16px;
+}
+
+.profile-note {
+    color: #686d75;
+    font-size: 0.85rem;
+    margin-top: 12px;
+    text-align: right;
+}
+
+.dashboard-section {
+    margin-top: 4px;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.dashboard-card {
+    padding: 24px;
+}
+
+.dashboard-card h3 {
+    color: #1a1c20;
+    font-size: 1.2rem;
+    margin: 0 0 16px;
+}
+
+.dashboard-card-head {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+.mini-link {
+    background: #0f5132;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 0.82rem;
+    font-weight: 800;
+    padding: 9px 12px;
+    text-decoration: none;
+}
+
+.finance-summary {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.finance-summary div {
+    background: #fbfaf7;
+    border: 1px solid rgba(18, 20, 23, 0.08);
+    border-radius: 8px;
+    padding: 14px;
+}
+
+.finance-summary span,
+.list-row span {
+    color: #8a8f98;
+    display: block;
+    font-size: 0.74rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.finance-summary strong {
+    color: #1a1c20;
+    display: block;
+    font-size: 1rem;
+    margin-top: 8px;
+}
+
+.status-line {
+    background: #f5efe2;
+    border-radius: 8px;
+    color: #7a5b20;
+    font-weight: 800;
+    margin: 14px 0 0;
+    padding: 12px;
+}
+
+.list-board {
+    display: grid;
+    gap: 10px;
+}
+
+.list-row {
+    background: #fbfaf7;
+    border: 1px solid rgba(18, 20, 23, 0.08);
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 6px 12px;
+    padding: 14px;
+}
+
+.list-row strong {
+    color: #1a1c20;
+    font-size: 0.95rem;
+    text-align: right;
+}
+
+.list-row small {
+    color: #686d75;
+    grid-column: 1 / -1;
+}
+
+.schedule-row,
+.evaluation-row {
+    grid-template-columns: 120px 1fr;
+}
+
+.schedule-row strong,
+.evaluation-row strong {
+    text-align: left;
+}
+
+.empty-state,
+.alert-error {
+    background: #fff;
+    border: 1px solid rgba(18, 20, 23, 0.08);
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+}
+
+.empty-state p,
+.alert-error {
+    color: #686d75;
+}
+
+.alert-error {
+    border-color: rgba(220, 53, 69, 0.25);
+    color: #b02a37;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+@media (max-width: 900px) {
+    .student-hero,
+    .profile-grid,
+    .dashboard-grid,
+    .finance-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .profile-note {
+        text-align: left;
+    }
+
+    .list-row,
+    .schedule-row,
+    .evaluation-row {
+        grid-template-columns: 1fr;
+    }
+
+    .list-row strong {
+        text-align: left;
+    }
+}
